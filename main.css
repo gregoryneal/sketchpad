@@ -1,0 +1,40 @@
+* { 
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+.bor { border: 1px dashed #666; }
+
+#grid { 
+  position: relative;
+  width: 900px;
+  height: 900px;
+  left: 50%;
+  transform: translate(-50%);
+  top: 0;
+}
+
+.pixel, .eol {
+  float: left;
+  display: inline-block;
+  margin: 0;
+}
+
+.options { 
+  cursor: move;
+  position: relative;
+  top: 0;
+  width: 200px;
+  height: 250px;
+  z-index = 1000;
+  background-color: none;
+  padding: 10px;
+  opacity: .8;
+}
+
+.op-fs {
+  background-color: white;
+}
+
+.colorpick { 
+  width: 50px;
+}

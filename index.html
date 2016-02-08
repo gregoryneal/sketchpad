@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700,300' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+	<div class="container">  
+		<div id="grid" class="bor"></div>
+		<div class="options">
+			<form>
+				<fieldset class="op-fs">
+					<legend>Options</legend>
+					<label for="px-row">Pixels / Row</label>
+					<input name="px-row" id="px-row" type="text" value="50"/>
+					<label for="px-col">Pixels / Column</label>
+					<input name="px-col" id="px-col" type="text" value="50"/>
+					<label for="select">Fill type</label>
+					<select id="fill-options" name="select">
+						<option value="random">Random Color</option>
+						<option value="opacity">Opacity fill</option>
+						<option value="manual">Color picker</option>
+					</select>
+					<br/><br/>
+					r: <input class="colorpick r" value="23"/>
+					<br/>
+					g: <input class="colorpick g" value="216"/>
+					<br/>
+					b: <input class="colorpick b" value="187"/>
+					<br/>
+					a: <input class="colorpick a" value="0.53"/>
+					<br/><br/>
+					<input id="grid-generator" type="button" value="Generate Grid"/>
+					<input id="grid-clear" type="button" value="Clear Grid"/>
+				</fieldset>
+			</form>     
+		</div>
+	</div>
+</body>
+</html>
